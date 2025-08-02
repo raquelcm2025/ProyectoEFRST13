@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alphabet Vowel Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f0f8ff;
+      margin: 0;
+      padding: 20px;
+    }
+    h2 {
+      color: #333;
+    }
+    .question {
+      margin: 20px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: inline-block;
+      text-align: left;
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Alphabet Vowel Quiz</h2>
+  <p>Listen to the sound and choose the correct vowel.</p>
+
+  <div class="question">
+    <p>1. Which vowel is this?</p>
+    <audio id="audioA" src="audio/a.mp3"></audio>
+    <button onclick="document.getElementById('audioA').play()">🔊 Play</button>
+    <div>
+      <label><input type="radio" name="q1"> A</label><br>
+      <label><input type="radio" name="q1"> E</label><br>
+      <label><input type="radio" name="q1"> I</label>
+    </div>
+  </div>
+
+</body>
+</html>
